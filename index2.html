@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style3.css">
+ </head>
+ <body>
+   <div class="container">
+      <!-- Navigation Buttons -->
+      <div class="nav-buttons" id="navButtons">
+          <button data-task="slider">Image Slider</button>
+          <button data-task="countdown">Countdown Timer</button>
+          <button data-task="color changer">Color Changer</button>
+          <button data-task="clock">Digital Clock</button>
+      </div>
+    <!--Image Slider-->
+    <div id="slider" class="task">
+    <h2>Image Slider</h2>
+    <div class="slider-container">
+      <div class="image-container">
+         <img src="img1/car5.jpg" alt="">
+         <img src="img1/car2.jpg" alt="">
+         <img src="img1/car3.jpg" alt="">
+         <img src="img1/car4.jpg" alt="">
+         </div>
+       <button class="prev"><i class="fas fa-angle-double-left"></i></button>
+       <button class="next"><i class="fas fa-angle-double-right"></i></button>
+      </div>
+    </div>
+        <div id="countdown" class="task">
+         <h2>Countdown Timer</h2>
+         <div id="timer-display">00:00:00</div>
+         <div id="button">
+            <button id="start-button">start</button>
+            <button id="stop-button">stop</button>
+            <button id="reset-button">reset</button>
+         </div>
+        </div>
+        <div id="color changer" class="task">
+        <div class="canvas">
+         <h1>color changer</h1>
+         <span class="button" id="grey">Grey</span>
+          <span class="button" id="white">White</span>
+          <span class="button" id="blue">Blue</span>
+          <span class="button" id="yellow"> Yellow</span>
+        <h2>Clicking on one of the colors above
+         <span>to change the background color of this page</span>
+        </h2>
+        </div>
+       </div>
+       <div id="clock" class="task">
+        <h2>Digital Clock</h2>
+        <div class="clock">
+         <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+         </div>
+         <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+         </div>
+         <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+         </div>
+         <div>
+            <span id="ampm">AM</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="index1.js"></script>
+ </body>
+ </html>
